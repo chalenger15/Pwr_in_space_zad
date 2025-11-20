@@ -1,0 +1,2 @@
+source /home/vboxuser/Desktop/esp-idf/receiver/build/bootloader/gdbinit/symbols
+source /home/vboxuser/Desktop/esp-idf/receiver/build/bootloader/gdbinit/connect

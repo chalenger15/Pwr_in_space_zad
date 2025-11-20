@@ -1,0 +1,23 @@
+Command: ninja all
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/receiver.c.obj
+In file included from /home/vboxuser/Desktop/esp-idf/receiver/main/receiver.c:5:
+/home/vboxuser/Desktop/esp-idf/components/driver/twai/include/driver/twai.h:17:2: warning: #warning "The legacy TWAI driver is deprecated, please use esp_twai.h" [-Wcpp]
+   17 | #warning "The legacy TWAI driver is deprecated, please use esp_twai.h"
+      |  ^~~~~~~
+[2/10] Performing build step for 'bootloader'
+[1/1] cd /home/vboxuser/Desktop/esp-idf/receiver/build/bootloader && /home/vboxuser/.espressif/python_env/idf6.1_py3.12_env/bin/python /home/vboxuser/Desktop/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/vboxuser/Desktop/esp-idf/receiver/build/bootloader/bootloader.bin
+Bootloader binary size 0x66b0 bytes. 0x950 bytes (8%) free.
+[3/10] Linking C static library esp-idf/main/libmain.a
+[4/10] No install step for 'bootloader'
+[5/10] Completed 'bootloader'
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Building C object CMakeFiles/receiver.elf.dir/project_elf_src_esp32.c.obj
+[8/10] Linking CXX executable receiver.elf
+[9/10] Generating binary image from built executable
+esptool v5.1.0
+Creating ESP32 image...
+Merged 2 ELF sections.
+Successfully created ESP32 image.
+Generated /home/vboxuser/Desktop/esp-idf/receiver/build/receiver.bin
+[10/10] cd /home/vboxuser/Desktop/esp-idf/receiver/build && /home/vboxuser/.espressif/python_env/idf6.1_py3.12_env/bin/python /home/vboxuser/Desktop/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/vboxuser/Desktop/esp-idf/receiver/build/partition_table/partition-table.bin /home/vboxuser/Desktop/esp-idf/receiver/build/receiver.bin
+receiver.bin binary size 0x28170 bytes. Smallest app partition is 0x100000 bytes. 0xd7e90 bytes (84%) free.
